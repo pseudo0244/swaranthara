@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { PlayCircle, ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { YouTubeEmbed } from "@/components/youtube-embed"
 
 export default function ExplorePage() {
