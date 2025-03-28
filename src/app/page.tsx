@@ -38,7 +38,7 @@ export default function Home() {
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4 text-center">
           <blockquote className="text-2xl md:text-3xl italic font-serif max-w-4xl mx-auto">
-            "Founded with a passion for nurturing musical talent and an unwavering commitment to excellence, we strive to create a vibrant community of musicians and music lovers of all ages."
+            Founded with a passion for nurturing musical talent and an unwavering commitment to excellence, we strive to create a vibrant community of musicians and music lovers of all ages.
           </blockquote>
         </div>
       </section>
@@ -55,7 +55,7 @@ export default function Home() {
               empowering students to express themselves through the universal language of music.
               </p>
               <p className="text-lg text-muted-foreground">
-                Whether you're a beginner or looking to refine advanced skills, our comprehensive programs cater to all
+                Whether you&apos;re a beginner or looking to refine advanced skills, our comprehensive programs cater to all
                 ages and skill levels.
               </p>
               <Button className="bg-navy hover:bg-navy/90 text-white" size="lg" asChild>

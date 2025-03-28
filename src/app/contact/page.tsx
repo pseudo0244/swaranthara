@@ -101,7 +101,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg font-semibold">Email</h3>
                     <p className="text-muted-foreground">umesha490@gmail.com</p>
-                    <p className="text-sm text-muted-foreground mt-1">We'll respond within 24 hours</p>
+                    <p className="text-sm text-muted-foreground mt-1">We&apos;ll respond within 24 hours</p>
                   </div>
                 </div>
 
@@ -154,7 +154,7 @@ export default function ContactPage() {
               {isSuccess ? (
                 <div className="bg-green-100 border border-green-200 text-green-800 rounded-lg p-4 mb-6">
                   <p className="font-medium">Thank you for your message!</p>
-                  <p>We'll get back to you as soon as possible.</p>
+                  <p>We&apos;ll get back to you as soon as possible.</p>
                 </div>
               ) : null}
 

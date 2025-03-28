@@ -4,7 +4,7 @@ const ComingSoon: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-black to-black text-white text-center px-6">
       <h1 className="text-6xl font-bold mb-4 animate-fadeIn">Coming Soon</h1>
-      <p className="text-lg mb-6 opacity-80">We're crafting something amazing. Stay tuned!</p>
+      <p className="text-lg mb-6 opacity-80">We&apos;re crafting something amazing. Stay tuned!</p>
 
       <div className="w-full max-w-md bg-white p-4 rounded-xl shadow-lg text-black">
         <input

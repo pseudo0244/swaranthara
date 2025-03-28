@@ -95,7 +95,7 @@ through the universal language of music.
               <h3 className="text-xl font-bold mb-3">Excellence</h3>
               <p className="text-muted-foreground">
                 We strive for excellence in everything we do, from instruction to performances, constantly pushing the
-                boundaries of what's possible.
+                boundaries of what&apos;s possible.
               </p>
             </div>
 
