@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Harmony Academy - Excellence in Music Education",
+  title: "Swaranatha School of Music",
   description: "Join our prestigious music school and develop your musical talents with expert instruction",
 }
 
