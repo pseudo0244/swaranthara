@@ -54,7 +54,7 @@ export default function ContactPage() {
       <section className="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/contactbg.jpg"
+            src="/images/bg1.jpg"
             alt="Contact Us"
             fill
             className="object-cover brightness-50"
@@ -121,7 +121,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Connect With Us</h3>
                 <div className="flex gap-4">
-                  <Link href="#" className="bg-muted p-3 rounded-full hover:bg-muted/80 transition-colors">
+                  <Link href="https://www.instagram.com/swaranthara.22?igsh=bnh3OHhvMm1qYjAz" className="bg-muted p-3 rounded-full hover:bg-muted/80 transition-colors">
                     <Instagram className="h-6 w-6" />
                     <span className="sr-only">Instagram</span>
                   </Link>

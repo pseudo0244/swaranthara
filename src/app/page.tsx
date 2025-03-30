@@ -1,8 +1,10 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { PlayCircle, ArrowRight, Phone, MapPin } from "lucide-react"
+import { PlayCircle, ArrowRight, Phone, MapPin } from 'lucide-react'
 import { SocialProof } from "@/components/social-proof"
 
 export default function Home() {
@@ -12,25 +14,36 @@ export default function Home() {
       <section className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/herobg.jpg"
+            src="/images/bg2.jpg"
             alt="Music School Hero"
             fill
             className="object-cover brightness-50"
             priority
           />
         </div>
-        <div className="relative z-10 container mx-auto px-4 text-center">
+        <div className="relative z-10 container mx-auto px-4 text-center flex flex-col items-center">
+          <div className="mb-6 w-40 h-40 relative">
+            <Image
+              src="/images/logobg.png"
+              width={160}
+              height={160}
+              alt="Swaranthara Logo"
+              className="object-contain"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
-          Swaranthara School of Music
+            Swaranthara School of Music
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
-          Where the rhythms of tradition meet the melodies of modernity.
+            Where the rhythms of tradition meet the melodies of modernity.
           </p>
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-md">
-          <Link href="/contact" className="flex items-center">
-  Begin Your Journey <ArrowRight className="ml-2 h-5 w-5" />
-</Link>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-md">
+              <Link href="/contact" className="flex items-center">
+                Begin Your Journey <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -38,7 +51,8 @@ export default function Home() {
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4 text-center">
           <blockquote className="text-2xl md:text-3xl italic font-serif max-w-4xl mx-auto">
-            Founded with a passion for nurturing musical talent and an unwavering commitment to excellence, we strive to create a vibrant community of musicians and music lovers of all ages.
+            Founded with a passion for nurturing musical talent and an unwavering commitment to excellence, we strive to
+            create a vibrant community of musicians and music lovers of all ages.
           </blockquote>
         </div>
       </section>
@@ -50,13 +64,14 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold">Our Vision</h2>
               <p className="text-lg text-muted-foreground">
-              At Swaranthara, we envision a world where music transcends boundaries and connects hearts. Our mission is to provide a nurturing
-              environment that encourages creativity,fosters collaboration, and instills a lifelong appreciation for music. We are dedicated to
-              empowering students to express themselves through the universal language of music.
+                At Swaranthara, we envision a world where music transcends boundaries and connects hearts. Our mission
+                is to provide a nurturing environment that encourages creativity,fosters collaboration, and instills a
+                lifelong appreciation for music. We are dedicated to empowering students to express themselves through
+                the universal language of music.
               </p>
               <p className="text-lg text-muted-foreground">
-                Whether you&apos;re a beginner or looking to refine advanced skills, our comprehensive programs cater to all
-                ages and skill levels.
+                Whether you&apos;re a beginner or looking to refine advanced skills, our comprehensive programs cater to
+                all ages and skill levels.
               </p>
               <Button className="bg-navy hover:bg-navy/90 text-white" size="lg" asChild>
                 <Link href="/about">
@@ -65,13 +80,29 @@ export default function Home() {
               </Button>
             </div>
             <div className="relative h-[400px] rounded-xl overflow-hidden">
-              <Image
-                src="/images/vision.png"
-                alt="Students learning music"
-                fill
-                className="object-cover rounded-xl"
-              />
+              <Image src="/images/vision.png" alt="Students learning music" fill className="object-cover rounded-xl" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Trailer Section */}
+      <section className="py-20 bg-black">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">Experience Swaranthara</h2>
+            <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl">
+              <video className="w-full h-full object-cover" autoPlay muted loop playsInline controls id="trailerVideo">
+                <source src="/videos/video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="absolute bottom-4 right-4 z-10">
+                
+              </div>
+            </div>
+            <p className="text-white/80 text-center mt-4">
+              Take a glimpse into the world of music at Swaranthara School of Music
+            </p>
           </div>
         </div>
       </section>
@@ -82,7 +113,8 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Programs</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Our curriculum is designed to cater to a diverse range of musical interests, ensuring that every student finds their unique voice.
+              Our curriculum is designed to cater to a diverse range of musical interests, ensuring that every student
+              finds their unique voice.
             </p>
           </div>
 
@@ -97,7 +129,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2">Instrumental Training</h3>
                 <p className="text-muted-foreground">
-                Lessons in instruments such as the piano, keyboard, vocals and guitar and more.
+                  Lessons in instruments such as the piano, keyboard, vocals and guitar and more.
                 </p>
               </CardContent>
             </Card>
@@ -111,7 +143,9 @@ export default function Home() {
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2">Vocal Coaching</h3>
-                <p className="text-muted-foreground">From classical to contemporary styles, our vocal programs cater to all genres.</p>
+                <p className="text-muted-foreground">
+                  From classical to contemporary styles, our vocal programs cater to all genres.
+                </p>
               </CardContent>
             </Card>
 
@@ -124,7 +158,10 @@ export default function Home() {
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2">Music Theory</h3>
-                <p className="text-muted-foreground">Understanding the foundations of music enables our students to compose, arrange, and appreciate music at a deeper level.</p>
+                <p className="text-muted-foreground">
+                  Understanding the foundations of music enables our students to compose, arrange, and appreciate music
+                  at a deeper level.
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -191,12 +228,7 @@ export default function Home() {
             </div>
 
             <div className="relative h-[400px] rounded-xl overflow-hidden">
-              <Image
-                src="/images/map.png"
-                alt="Music school building"
-                fill
-                className="object-cover rounded-xl"
-              />
+              <Image src="/images/map.png" alt="Music school building" fill className="object-cover rounded-xl" />
             </div>
           </div>
         </div>
@@ -204,4 +236,3 @@ export default function Home() {
     </main>
   )
 }
-

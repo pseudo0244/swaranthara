@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, MusicIcon } from "lucide-react"
+import { Menu } from "lucide-react"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -40,6 +41,9 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
+            <div className="relative w-8 h-8">
+              <Image src="/images/logo.jpeg" alt="Swaranthara Logo" fill className="object-contain" />
+            </div>
             <span className="font-bold text-xl">Swaranthara</span>
           </Link>
 
@@ -73,8 +77,15 @@ export function Navbar() {
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between border-b pb-4">
                     <Link href="/" className="flex items-center gap-2">
-                      <MusicIcon className="h-6 w-6" />
-                      <span className="font-bold text-xl">Harmony Academy</span>
+                      <div className="relative w-6 h-6">
+                        <Image
+                          src="/images/swaranthara-logo.png"
+                          alt="Swaranthara Logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <span className="font-bold text-xl">Swaranthara</span>
                     </Link>
                   </div>
                   <nav className="flex flex-col gap-4 mt-8">
