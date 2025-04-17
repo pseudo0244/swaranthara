@@ -49,6 +49,15 @@ export default function ExplorePage() {
   <div className="aspect-video rounded-xl overflow-hidden">
     <YouTubeEmbed videoId="vnbjXPmqPBs" title="V4" />
   </div>
+  <div className="aspect-video rounded-xl overflow-hidden">
+  <iframe
+    src="https://www.youtube.com/embed/Kz3EoAtTqh8"
+    title="YouTube Live"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    className="w-full h-full"
+  ></iframe>
+</div>
             
           </div>
         </div>
